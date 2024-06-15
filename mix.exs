@@ -57,7 +57,7 @@ defmodule InertiaVue.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.2"},
-      {:inertia, "~> 0.5.0"}
+      {:inertia, "~> 0.7.0"}
     ]
   end
 
