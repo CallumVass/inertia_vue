@@ -263,7 +263,7 @@ defineProps<{
 </template>
 ```
 
-### Clean Up Controllers
+### Clean Up Controllers (if you only plan on rendering inertia pages)
 
 Delete the `pages_html` directory and `page_html.ex` file under the `controllers` directory in your `lib` web folder.
 
