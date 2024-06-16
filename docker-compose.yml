@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  my_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - db_data:/var/lib/sqlite
+    environment:
+      - DATABASE_PATH=/var/lib/sqlite/inertia_vue.db
+      - SECRET_KEY_BASE=Kevk2tMXE8xxeU3lQZ1N9hXcD7vNwbZaIOMgWw+N/dLeZUhu1uztbM97IVzzRl2M
+    ports:
+      - 4000:4000
+
+volumes:
+  db_data:
