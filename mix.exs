@@ -78,7 +78,7 @@ defmodule InertiaVue.MixProject do
       "assets.deploy": [
         "tailwind default --minify",
         "cmd --cd assets node build.js --deploy",
-        "cmd --cd assets node builder-ssr.js --deploy",
+        "cmd --cd assets node build-ssr.js --deploy",
         "phx.digest"
       ]
     ]
