@@ -76,7 +76,7 @@ defmodule InertiaVue.MixProject do
       "assets.setup": ["tailwind.install --if-missing", "cmd --cd assets npm install"],
       "assets.build": ["tailwind inertia_vue"],
       "assets.deploy": [
-        "tailwind default --minify",
+        "tailwind inertia_vue --minify",
         "cmd --cd assets node build.js --deploy",
         "cmd --cd assets node build-ssr.js --deploy",
         "phx.digest"
