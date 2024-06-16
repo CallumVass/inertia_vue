@@ -2,6 +2,8 @@
 
 This project contains a sample project and guide that walks you through setting up a new Phoenix project with Inertia.js and Vue 3, using SQLite3 for the database, without LiveView and esbuild with SSR.
 
+You can view this application at: https://inertia-vue.fly.dev/
+
 ## Create a New Phoenix Project
 
 ```sh
