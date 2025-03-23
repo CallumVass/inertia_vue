@@ -1,5 +1,7 @@
 # Inertia.js with Phoenix and Vue 3 Setup
 
+> **Update:** This project now supports Inertia.js 2.0! The dependencies have been upgraded to use Inertia Phoenix 2.3.0, @inertiajs/vue3 2.0.5, Phoenix 1.7.20, and Phoenix LiveView 1.0.7.
+
 This project contains a sample project and guide that walks you through setting up a new Phoenix project with Inertia.js and Vue 3, using SQLite3 for the database, without LiveView and esbuild with SSR.
 
 You can view this application at: https://inertia-vue.fly.dev/
