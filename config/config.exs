@@ -76,7 +76,7 @@ config :inertia,
   # Recommended: enable in non-production environments and disable in production,
   # so that SSR failures will not cause 500 errors (but instead will fallback to
   # CSR).
-  raise_on_ssr_failure: true
+  raise_on_ssr_failure: config_env() != :prod
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
