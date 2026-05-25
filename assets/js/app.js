@@ -42,10 +42,8 @@ import "phoenix_html";
 // >> liveSocket.disableLatencySim()
 // window.liveSocket = liveSocket
 
-import { createSSRApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/vue3";
-import axios from "axios";
-axios.defaults.xsrfHeaderName = "x-csrf-token";
+import { createSSRApp, h } from "vue";
 
 createInertiaApp({
   resolve: async (name) => {
@@ -56,5 +54,8 @@ createInertiaApp({
     createSSRApp({ render: () => h(App, props) })
       .use(plugin)
       .mount(el);
+  },
+  http: {
+    xsrfHeaderName: "x-csrf-token",
   },
 });
