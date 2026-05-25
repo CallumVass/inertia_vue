@@ -58,7 +58,7 @@ defmodule InertiaVue.MixProject do
       {:dns_cluster, "~> 0.2"},
       {:bandit, "~> 1.11"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:inertia, "~> 2.6"}
+      {:inertia, "~> 3.0.0-rc"}
     ]
   end
 
