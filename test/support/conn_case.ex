@@ -27,6 +27,7 @@ defmodule InertiaVueWeb.ConnCase do
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
+      import Inertia.Testing
       import InertiaVueWeb.ConnCase
     end
   end
