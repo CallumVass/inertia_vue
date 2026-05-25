@@ -3,6 +3,9 @@ defmodule InertiaVueWeb.PageControllerTest do
 
   test "GET /", %{conn: conn} do
     conn = get(conn, ~p"/")
-    assert html_response(conn, 200) =~ "Peace of mind from prototype to production"
+
+    assert html_response(conn, 200) =~ "data-page"
+    assert inertia_component(conn) == "Home"
+    assert inertia_props(conn).name == "My Name (from Server)"
   end
 end
